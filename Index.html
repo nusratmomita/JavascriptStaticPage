@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/2c4593a4a7.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign Up</h1>
+            <form onsubmit="getValue()">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                         <input type="text" placeholder="Name" id="name">
+                    </div>
+
+                    <div class="input-field">
+                         <i class="fa-solid fa-envelope"></i>
+                         <input type="email" placeholder="Email" id="email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Address" id="address">
+                   </div>
+
+                   <div class="input-field">
+                    <i class="fa-solid fa-mobile"></i>
+                    <input type="tel" placeholder="Mobile No" id="mobile">
+                  </div>
+
+                    <div class="input-field">
+                         <i class="fa-solid fa-lock"></i>
+                         <input type="password" placeholder="Password" id="password">
+                    </div>
+                    <p>Forget Password? <a href="#"> Click Here</a></p>
+                </div>
+               <input type="submit" class="button" value="Submit"> 
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function getValue()
+        {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var add = document.getElementById("address").value;
+            var mb = document.getElementById("mobile").value;
+            var pw = document.getElementById("password").value;
+            
+            document.write("Your Name is : "+name + "<br>");           
+            document.write("Your Email is : "+email + "<br>");
+            document.write("Your Address is : "+add + "<br>");
+            document.write("Your Mobile No is : "+mb + "<br>");
+            document.write("Your Password is : "+pw + "<br>");
+
+           
+        }
+    </script>
+</body>
+</html>
